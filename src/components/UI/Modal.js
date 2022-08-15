@@ -5,7 +5,7 @@ import Card from "./Card";
 import styles from "./Modal.module.css";
 const Modal = (props) => {
   return (
-    <div>
+    <React.Fragment>
       <div className={styles.backdrop} onClick={props.onConfirm}/>
 
       <Card className={styles.modal}>
@@ -19,7 +19,7 @@ const Modal = (props) => {
           <Button onClick={props.onConfirm}>Okay</Button>
         </footer>
       </Card>
-    </div>
+    </React.Fragment>
   );
 };
 
